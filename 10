@@ -1,0 +1,56 @@
+# Python user-defined exception
+class Error(Exception):  # Base class for other exceptions
+    pass
+
+
+class BadUser(Error):  # Raised when the Username is wrong
+    pass
+
+
+class BadPass(Error):  # Raised when the Password is wrong
+    pass
+
+
+# check the username and password
+while True:
+    user = input("Username: ")
+    password = input("Password: ")
+
+    try:
+        if (user != "aryan"):
+            raise BadUser
+        elif (password != "1234"):
+            raise BadPass
+        else:
+            print("Congratulations! You have successfully logged in.\n")
+            break
+
+    except BadUser:
+        print("Username is wrong!\n")
+        break
+    except BadPass:
+        print("Password is wrong!\n")
+        break
+
+
+
+ class Findarea():
+#
+#     @dispatch(int, int)
+#     def area(self, length, breadth):
+#         print("Area of rectangle", length * breadth)
+#
+#     @dispatch(int)
+#     def area(self, side):
+#         print("Area of sqaure", side * side)
+#
+#
+# f = Findarea()
+# l = int(input("Enter length of rectangle:"))
+# b = int(input("Enter breadth of rectangle:"))
+# s = int(input("Enter side of square:"))
+# f.area(l, b)
+# f.area(s)
+#
+#
+#
