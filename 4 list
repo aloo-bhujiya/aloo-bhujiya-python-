@@ -1,0 +1,261 @@
+# # list1=[10,20,30,10.5,11.5,"Hello"]
+# #
+# # print(list1)
+# #
+# # i=0
+# #
+# #
+# # for i in range(0,len(list1)):
+# #     print(list1[i])
+# #
+# #
+# # tuple=("Hello",12,13)
+# #
+# # tuple[1]=13
+# #
+# # print(tuple)
+#
+#
+# # list=[10,30,20,50,11.5]
+# # sum=0
+# # for i in range(0,len(list)):
+# #     sum=sum+list[i]
+# #
+# #
+# # print(sum)
+# #
+#
+#
+# l1=[]
+#
+# print(l1)
+# l1=[10,20,30,40,50]
+# print(l1)
+# l1=[1,2,3,4,5,"Hello",[11,12,13],(10,20,30)]
+# print(l1)
+# print(l1[3])  #positive indexing
+# print(l1[-3])   #negative indexing
+#
+# print(l1[5][0])
+#
+# print(l1[6][2])
+# print(l1[7][2])
+#
+#
+#
+# a=[]
+#
+# a.append(10)
+# a.append(20)
+# a.append(30)
+# a.append([100,300])#allowed
+# # a.append(100,300)# not allowed
+#
+# print(a)
+#
+# #append element using loops
+#
+# for i in range(1,4):
+#     a.append(i)
+# print(a)
+#
+# #tuple as subelement
+#
+# a.append((1111))
+# print(a)
+#
+# #insert method
+# a.insert(0,7777)
+# print(a)
+#
+#
+# a.insert(0,[77,77])
+# print(a)
+# #extend method
+# a.extend([77,77])
+# print(a)
+#
+# #delete method
+#
+# l2=[10,20,30,40,50]
+#
+# l2.remove(10)
+# print(l2)
+#
+# #pop method
+#
+# l2.pop() #last element
+# print(l2)
+#
+# l2.pop(0) #index number
+# print(l2)
+#
+#
+# #remove element using loop
+#
+# l3=[1,2,3,4,5,6,7,8,9,10]
+#
+# for i in range(1,5):
+#     l3.remove(i)
+# print(l3)
+#
+# #slice operataion
+#
+# slice=["A","B","C","D","E","F","G","H","I","J"]
+#
+# #odd even number
+#
+#
+# numbers=[1,2,3,5,4]
+
+# #even
+# for i in range(0,len(numbers)):
+#     if numbers[i]%2==0:
+#         print(numbers[i])
+#
+# #odd
+#
+# for i in range(0,len(numbers)):
+#     if numbers[i]%2!=0:
+#         print(numbers[i])
+#
+# #reverse
+#
+# for i in range(len(numbers)-1,-1,-1):
+#     print(numbers[i])
+#
+# #sum of all
+#
+# sum=0
+# for i in range(0,len(numbers)):
+#     sum=sum+numbers[i]
+# print(sum)
+#
+# #multiplication of all
+#
+# mul=1
+# for i in range(0,len(numbers)):
+#     mul=mul*numbers[i]
+# print(mul)
+#
+# #sorted
+#
+# numbers.sort()
+# print(numbers)
+#
+# #reverse sorted
+#
+# numbers.sort(reverse=True)
+# print(numbers)
+#
+# #sort wtihout function
+#
+# numbers=[2,4,5,6,1,42,9]
+#
+# for i in range(0,len(numbers)-1):
+#     for j in range(0,len(numbers)-1):
+#         if numbers[j]>numbers[j+1]:
+#             temp=numbers[j]
+#             numbers[j]=numbers[j+1]
+#             numbers[j+1]=temp
+# print(numbers)
+#
+#
+# #largest in list
+#
+#
+# numbers=[2,4,5,6,1,42,9]
+#
+# largest=numbers[0]
+# for i in range(0,len(numbers)):
+#     if largest<numbers[i]:
+#         largest=numbers[i]
+# print(largest)
+#
+#
+#
+#common in list
+
+list1=[1,2,3,4,5,6,7,8,9,10]
+list2=[1,2,4,6,77,12,3141,21]
+
+print(set(list1)&set(list2))
+
+
+#Create List, Access List, Update list(Add item, Remove item), Delete List.
+
+# #Create List
+#
+# list1=[1,2,3,4,5,6,7,8,9,10]
+#
+# #Access List
+#
+# print(list1[0])
+#
+# #Update list(Add item, Remove item)
+#
+# list1.append(11)
+# print(list1)
+#
+# list1.remove(11)
+# print(list1)
+#
+#
+# #Delete List
+#
+# del list1
+# print(list1)
+#
+#
+# #Write a Python program to select the even items of a list.
+#
+# list1=[1,2,3,4,5,6,7,8,9,10]
+#
+# for i in range(0,len(list1)):
+#     if list1[i]%2==0:
+#         print(list1[i])
+#
+#
+
+#uncommon elements in list
+
+# list1=[1,2,3,4,5,6,7,8,9,10]
+# list2=[1,2,4,6,77,12,3141,21]
+#
+# print(set(list1)^set(list2))
+
+
+#circle area
+
+# radius=float(input("Enter radius of circle:"))
+# area=3.14*radius*radius
+# print("Area of circle is:",area)
+
+#best of two test average marks out of three test’s marks  accepted from the user.
+
+# test1=float(input("Enter marks of test1:"))
+# test2=float(input("Enter marks of test2:"))
+# test3=float(input("Enter marks of test3:"))
+
+# if test1>test2 and test1>test3:
+#     print("Best of two test average marks is:",(test2+test3)/2)
+# elif test2>test1 and test2>test3:
+#     print("Best of two test average marks is:",(test1+test3)/2)
+# elif test3>test1 and test3>test2:
+#     print("Best of two test average marks is:",(test1+test2)/2)
+# else:
+#     print("All test marks are equal")
+
+
+#palindrome string
+
+# string=input("Enter string:")
+
+# if string==string[::-1]:
+
+#     print("String is palindrome")
+
+# else:
+
+#     print("String is not palindrome")
+
