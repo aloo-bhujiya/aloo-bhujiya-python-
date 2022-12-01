@@ -1,0 +1,138 @@
+#in set we only give values no key needed and only unique values are printed
+#sets are mutable
+
+# create set
+# set1={1,2,3,3,3}
+#
+# print(type(set1))
+#
+# print(set1)
+
+
+# #adding updating and deleting elements in set
+set1={1,2,3,4}
+# set2={5,6,7}
+# set1.add(5)
+#
+# set1.update([10,11,12])
+#
+# set1.update(set2)
+#
+# set1.discard(7)
+# set1.remove(7)
+# set1.pop()
+# print(set1)
+# #
+#
+# #set operations
+
+# set1={1,2,3,4,4,1,2}
+# set2={5,6,7}
+# #union
+# print(set1|set2)
+# print(set1.union(set2))
+#
+
+# #intersection
+# set1={1,2,3,4,4,1,2,5}
+# set2={5,6,7}
+# print(set1 & set2)
+# print(set1.intersection(set2))
+
+#
+
+# #difference
+# set1={1,2,3,4,4,1,2,5}
+# set2={5,6,7}
+# print(set1-set2)
+# print(set2-set1)
+# print(set1.difference(set2))
+
+
+# #
+# s1={1,2,3,4,5}
+# s2={1,2,3,11}
+# print(s2.issubset(s1))
+#
+# if s1>s2:
+#     print("yes")
+#
+# print(s1.issuperset(s2))
+# #copy method overrides
+# s2=s1.copy()
+# print(s2)
+
+# #why sets are not ordered in python
+#
+# s1={5,4,221,31,131,1}
+# print(s1)
+#
+#
+#
+#
+# #creating set from list
+#
+# a=[12,14,15]
+#
+# print(type(a))
+#
+# s1=set(a)
+#
+# print(type(s1))
+# print(s1)
+
+# # uncommon elements in two sets
+# s1={1,2,3,4,5}
+# s2={1,2,3,11}
+# s3=s2^s1
+#
+# s4=s1^s2
+#
+# print(s3)
+# print(s4)
+
+
+# membership in set
+# s1={1,2,3,4,5}
+# s2={1,2,3,11}
+# print(1 in s1)
+# print(1 not in s1)
+
+
+# # printing unique elements in list
+#
+# lof=[1,2,3,4,5,6,7,8,9,10,1,4,5,6,9]
+# s1=set(lof)
+# print(s1)
+
+
+
+
+# #symmetric difference
+# s1={1,2,3,4,5}
+# s2={1,2,3,11}
+# print(s1.symmetric_difference(s2))
+# print(s2.symmetric_difference(s1))
+
+
+# #clear method
+#
+# s1={1,2,3,4,5}
+# s2={1,2,3,11}
+# s1.clear()
+# print(s1)
+
+
+
+# #create a set, add member(s) in a set and remove one item from set
+#
+# s1={1,2,3,4,5}
+# s1.add(6)
+# s1.remove(1)
+# print(s1)
+
+
+
+#  # Set comprehension
+# set1 = {x for x in range(10)}
+# print(set1)
