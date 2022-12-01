@@ -1,0 +1,208 @@
+# Tuples
+# t1 = (1, 2, 3, 4, 5)
+# print(t1)
+# print(t1[0])
+# print(type(t1))
+
+#update tuple
+# t1 = (1, 2, 3, 4, 5)
+# l1 = list(t1)
+# l1[0] = 100
+# t1 = tuple(l1)
+# print(t1)
+
+
+
+# t1 = (10, 20, 30, 40)
+#
+# print(type(t1))
+#
+# t2 = (7,)
+#
+# print(type(t2))
+#
+# print(t1[0::2])
+#
+# print(len(t1))
+#
+# if 10 in t1:
+#     print("yes")
+# else:
+#     print("no")
+#
+# if 10 not in t1:
+#     print("yes")
+# else:
+#     print("no")
+#
+# # modification in tuple
+#
+# t3 = (1, 2, 3, 4, 5)
+#
+# l1 = list(t3)
+#
+# l1[0] = 10
+#
+# print(l1)
+#
+# l1.append(7777)
+# print(l1)
+#
+# l1.extend([10, 20, 30])
+# print(l1)
+#
+# t3= tuple(l1)
+# print(t3)
+#
+# print(type(t3))
+#
+#deletion in tuple
+#
+# l5=[10,20,30,40,50]
+#
+#
+# del l5[0]
+#
+# print(l5)
+
+
+# #creating a nested tuple
+#
+# t4=(10,20,30,40,50,60)
+#
+# t5=(70,80,90)
+#
+# t6=(t4,t5)
+# print(t6)
+#
+# t7=(777,)
+#
+# t6=t6+t7
+# print(t6)
+#
+# #packing and unpacking
+#
+# t8=(1,2,3,4,5)
+#
+# *x,y,z=t8
+#
+# print(x)
+# print(y)
+# print(z)
+#
+#
+# #looping in tuple
+#
+# t9=(10,20,30)
+#
+# for num in t9:
+#     print(num)
+#
+# i=0
+# while i<len(t9):
+#     print(t9[i])
+#     i+=1
+#
+# # min max sort count index sum of tuple
+#
+# t10=(10,20,30,40,50,60,70,80,90,100,10,10)
+#
+# print("The minimum sort count:",min(t10))
+# print("The maximum sort count:",max(t10))
+# print("The sum of tuple:",sum(t10))
+# print("The index of 10:",t10.index(10))
+# print("The count of 10:",t10.count(10))
+# print("The sorted tuple:",sorted(t10))
+# print("The sorted tuple in reverse:",sorted(t10,reverse=True))
+# print("The reversed:",reversed(t10))
+#
+#
+#
+
+# Write a Python program to find repeated items of a tuple
+
+# t1=(10,20,30,40,50,10,20,30,40,50)
+#
+# t2=()
+#
+# for i in t1:
+#     if t1.count(i)>1:
+#         if i not in t2:
+#             t2=t2+(i,)
+# print(t2)
+
+
+#Create a tuple and find the minimum and maximum number from it (Without min max method)
+# t1=(10,20,30,40,50,60,70,80,90,100)
+# min=t1[0]
+# max=t1[0]
+# for i in t1:
+#       if i<min:
+#           min=i
+#       if i>max:
+#           max=i
+# print("The minimum number is:",min)
+# print("The maximum number is:",max)
+
+
+# Min and Max in Tuple
+# t1 = (10, 20, 30, 40, 50, 60, 70, 80, 90, 100)
+# print("The maximum number is:", max(t1))
+# print("The minimum number is:",min(t1))
+
+# #sum of tuple
+# t1 = (10, 20, 30, 40, 50, 60, 70, 80, 90, 100)
+# print("The sum of tuple is :",sum(t1))
+
+#sort tuple
+
+# t1 = (10,30,20,70,60,50,40,80,90,100)
+# print("The sorted tuple is :",sorted(t1))
+# print("The sorted tuple in reverse is :",sorted(t1,reverse=True))
+
+#Finding of Index of an element in a tuple
+#
+# t1 = (10, 20, 30, 40, 50, 60, 70, 80, 90, 100)
+# print("The index of 10 is :",t1.index(10))
+
+#count of an element in a tuple
+#
+# t1 = (10, 20, 30, 40, 50, 60, 70, 80, 90, 100,10,10,10,10,10)
+# print("The count of 10 is :",t1.count(10))
+
+
+
+# # {1:1, 3:9,5:25,7:49,9:81}
+#
+# dict={1:1,3:9,5:25,7:49,9:81}
+#
+# print(dict)
+
+
+# a=[1,2,3]
+# b=[4,5,6]
+# c=a+b
+# print(c)
+
+# print([1,2,3]*3)
+
+
+# t=["a","b","c","d","e","f"]
+# t[1:3]=['x','y']
+# print(t)
+
+
+# Str='Maharashtra State Board of Technical Education'
+# print(Str[15::1])
+# print(Str[-10:-1:2])
+
+# t=(1,2,3,(4,),[5,6])
+# print(t[3])
+# t[4][0]=7
+# print(t)
+
+# fruit='banana'
+# print(fruit[:3])
+# print(fruit[3:])
+# print(fruit[3:3])
+# print(fruit[:])
