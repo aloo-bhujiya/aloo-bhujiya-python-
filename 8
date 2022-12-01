@@ -1,0 +1,59 @@
+#Write a Python function that accepts a string and calculate the number of
+# upper case letters and lower case letters.
+#
+# def upperlower():
+#
+#     upper = 0
+#     lower = 0
+#
+#     string=input("Enter the string : ")
+#     for i in range(0,len(string)):
+#
+#         if (ord(string[i]) >= 97 and ord(string[i]) <= 122):
+#             lower =lower + 1
+#
+#         elif (ord(string[i]) >= 65 and ord(string[i]) <= 90):
+#             upper =upper + 1
+#
+#     print('Lower case characters = %s' % lower,
+#           'Upper case characters = %s' % upper)
+#
+#
+# upperlower()
+
+
+##Write a Python program that will calculate area and circumference of circle using inbuilt Math module.
+
+# import math
+#
+# def area_circumference():
+#     radius=int(input("Enter the radius of circle : "))
+#     area=math.pi*radius*radius
+#     circumference=2*math.pi*radius
+#     print("Area of circle is : ",area)
+#     print("Circumference of circle is : ",circumference)
+#
+# area_circumference()
+
+
+## Write a NumPy program to generate six random integers between 10 and 30.
+
+# import numpy as np
+#
+# def random_integers():
+#     array=np.random.randint(10,30,6)
+#     print(array)
+#
+# random_integers()
+
+
+
+#Write a Python program to create user defined module that will ask your college name and will display the name of college.
+def college(str):
+    return (print("Name of your college is :",str))
+    
+
+import mod
+
+inp=input("ENTER THE NAME OF THE COLLEGE:")
+mod.college(inp)
